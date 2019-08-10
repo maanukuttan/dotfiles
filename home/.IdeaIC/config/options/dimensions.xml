@@ -1,0 +1,42 @@
+<application>
+  <component name="DimensionService">
+    <location key="FileChooserDialogImpl.0.0.1920.1080" x="733" y="41" />
+    <location key="NewModule_or_Project.wizard.0.0.1920.1080" x="568" y="100" />
+    <location key="WELCOME_SCREEN.0.0.1920.1080" x="957" y="395" />
+    <location key="com.intellij.ide.util.TipDialog.0.0.1920.1080" x="1131" y="173" />
+    <location key="#com.intellij.execution.impl.EditConfigurationsDialog.0.0.1920.1080" x="414" y="143" />
+    <location key="search.everywhere.popup.0.0.1920.1080" x="623" y="244" />
+    <location key="SettingsEditor.0.0.1920.1080" x="451" y="76" />
+    <location key="#com.intellij.refactoring.rename.AutomaticRenamingDialog.0.0.1920.1080" x="676" y="77" />
+    <location key="#com.intellij.ide.util.MemberChooser.0.0.1920.1080" x="754" y="58" />
+    <location key="#Plugins.0.0.1920.1080" x="553" y="175" />
+    <location key="#com.intellij.ide.util.TreeClassChooserDialog.0.0.1920.1080" x="686" y="246" />
+    <location key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog.0.0.1920.1080" x="804" y="378" />
+    <location key="StructurePopup.0.0.1920.1080" x="687" y="275" />
+    <location key="new project wizard.0.0.1920.1080" x="595" y="66" />
+    <location key="chooseDestDirectoryDialog.0.0.1920.1080" x="715" y="266" />
+    <location key="run.anything.popup.0.0.1920.1080" x="622" y="248" />
+    <size key="FileChooserDialogImpl.0.0.1920.1080" width="428" height="484" />
+    <size key="NewModule_or_Project.wizard.0.0.1920.1080" width="779" height="826" />
+    <size key="search.everywhere.popup.0.0.1920.1080" width="672" height="678" />
+    <size key="SettingsEditor.0.0.1920.1080" width="1001" height="707" />
+    <size key="#com.intellij.refactoring.rename.AutomaticRenamingDialog.0.0.1920.1080" width="548" height="817" />
+    <size key="#com.intellij.ide.util.MemberChooser.0.0.1920.1080" width="378" height="575" />
+    <size key="#Plugins.0.0.1920.1080" width="804" height="677" />
+    <size key="#com.intellij.ide.util.TreeClassChooserDialog.0.0.1920.1080" width="529" height="422" />
+    <size key="GridCell.Tab.0.left.0.0.1920.1080" width="1856" height="282" />
+    <size key="GridCell.Tab.0.center.0.0.1920.1080" width="1856" height="282" />
+    <size key="GridCell.Tab.0.right.0.0.1920.1080" width="1856" height="282" />
+    <size key="GridCell.Tab.0.bottom.0.0.1920.1080" width="1856" height="282" />
+    <size key="GridCell.Tab.1.left.0.0.1920.1080" width="1862" height="350" />
+    <size key="GridCell.Tab.1.center.0.0.1920.1080" width="1862" height="350" />
+    <size key="GridCell.Tab.1.right.0.0.1920.1080" width="1862" height="350" />
+    <size key="GridCell.Tab.1.bottom.0.0.1920.1080" width="1862" height="350" />
+    <size key="DebuggerActiveHint.0.0.1920.1080" width="462" height="484" />
+    <size key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog.0.0.1920.1080" width="297" height="214" />
+    <size key="StructurePopup.0.0.1920.1080" width="540" height="524" />
+    <size key="new project wizard.0.0.1920.1080" width="715" height="838" />
+    <size key="chooseDestDirectoryDialog.0.0.1920.1080" width="475" height="438" />
+    <size key="javadoc.popup.new.0.0.1920.1080" width="738" height="300" />
+  </component>
+</application>

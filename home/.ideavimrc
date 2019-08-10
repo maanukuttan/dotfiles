@@ -1,0 +1,47 @@
+let mapleader = ","
+
+set rnu
+set tabstop=4 softtabstop=0 expandtab shiftwidth=4 smarttab
+set hlsearch
+set incsearch
+set smartcase
+set nowrap
+set encoding=utf-8
+
+set noerrorbells
+set vb t_vb=
+
+set commentry
+set surround
+
+" copy/paste to/from clipboard
+set clipboard=unnamedplus
+vn <leader>y "+y
+nn <leader>y "+y
+vn <leader>p "+p
+nn <leader>p "+p
+
+" delete with no save to buffer
+nn <leader>d "_d
+nn <leader>x "+x
+vn <leader>d "_d
+vn <leader>x "+x
+
+nn <leader>f :action GotoFile<cr>
+nn <leader>c :action GotoClass<cr>
+nn <leader>s :action FileStructurePopup<cr>
+nn <leader>e :action ShowErrorDescription<cr>
+
+nn == :action ReformatCode<cr>
+vn == :action ReformatCode<cr>
+
+nn <leader>gd :action GotoDeclaration<cr>
+nn <leader>gb :action Back<cr>
+nn <leader>gf :action Forward<cr>
+nn <leader>gr :action FindUsages<cr>
+nn <leader>gj :action QuickJavaDoc<cr>
+nn <leader>ai :action OptimizeImports<cr>
+
+nn ]s :action GotoNextError<cr>
+nn [s :action GotoPreviousError<cr>
+

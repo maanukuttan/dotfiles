@@ -1,0 +1,19 @@
+[diff]
+    tool = vimdiff
+[difftool]
+    prompt = false
+[difftool "vimdiff"]
+    cmd = nvim -d $REMOTE $LOCAL
+[merge]
+    tool = vimdiff
+    conflictstyle = diff3
+[mergetool]
+    prompt = true
+    style = diff3
+[mergetool "vimdiff"]
+    cmd = nvim -d $BASE $LOCAL $REMOTE $MERGED -c '$wincmd w' -c 'wincmd J'
+[user]
+    email = 
+    name = Praveen
+[alias]
+    st = status -s
