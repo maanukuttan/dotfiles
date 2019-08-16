@@ -17,3 +17,9 @@
     name = Praveen
 [alias]
     st = status -s
+    mt = mergetool
+    dt = difftool
+    co = checkout
+    slog = log --format='%C(bold blue)%h %C(bold green)[%<(10,trunc)%ar] %C(dim white)[%<(10,trunc)%an]%C(reset) %C(white)%<(50,trunc)%s%C(bold yellow)%d'
+    glog = log --graph --format='%C(bold blue)%h %C(bold green)[%<(10,trunc)%ar] %C(dim white)[%<(10,trunc)%an]%C(reset) %C(white)%<(50,trunc)%s%C(bold yellow)%d'
+
