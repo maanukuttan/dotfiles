@@ -5,43 +5,22 @@ let maplocalleader = ","
 """""""""""""""""""""""""""plugins"""""""""""""""""""""""""""""""""""""
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 call plug#begin('~/.config/nvim/plugged')
+
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-commentary'
 
-Plug 'mbbill/undotree'
-
 Plug 'junegunn/goyo.vim'
-" Plug 'junegunn/seoul256.vim'
 Plug 'junegunn/limelight.vim'
 Plug 'junegunn/fzf.vim'
 
-Plug 'PotatoesMaster/i3-vim-syntax'
 Plug 'jiangmiao/auto-pairs'
-
+Plug 'mbbill/undotree'
 Plug 'itchyny/lightline.vim'
-Plug 'autozimu/LanguageClient-neovim', {
-    \ 'branch': 'next',
-    \ 'do': 'bash install.sh',
-    \ }
-
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-Plug 'leafgarland/typescript-vim'
-
 Plug 'morhetz/gruvbox'
 
 call plug#end()
-
-let g:deoplete#enable_at_startup=1
-let g:LanguageClient_serverCommands={}
-let g:LanguageClient_serverCommands.python=['pyls']
-let g:LanguageClient_serverCommands.javascript=['javascript-typescript-stdio']
-let g:LanguageClient_serverCommands.typescript=['javascript-typescript-stdio']
-let g:LanguageClient_serverCommands.java=['/opt/jlp/jdtls']
-nn <silent>gh :call LanguageClient#textDocument_hover()<CR>
-nn <silent>gd :call LanguageClient#textDocument_definition()<CR>
-nn <silent>gr :call LanguageClient#textDocument_rename()<CR>
 
 let g:lightline = {
       \ 'colorscheme': 'wombat',
