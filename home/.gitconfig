@@ -3,7 +3,7 @@
 [difftool]
     prompt = false
 [difftool "vimdiff"]
-    cmd = nvim -d $REMOTE $LOCAL
+    path = nvim
 [merge]
     tool = vimdiff
     conflictstyle = diff3
@@ -11,7 +11,7 @@
     prompt = true
     style = diff3
 [mergetool "vimdiff"]
-    cmd = nvim -d $BASE $LOCAL $REMOTE $MERGED -c '$wincmd w' -c 'wincmd J'
+    path = nvim
 [user]
     email = 
     name = Praveen

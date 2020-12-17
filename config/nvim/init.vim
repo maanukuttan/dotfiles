@@ -1,15 +1,27 @@
-let mapleader = ","
-let maplocalleader = ","
+let mapleader = " "
+let maplocalleader = " "
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """""""""""""""""""""""""""plugins"""""""""""""""""""""""""""""""""""""
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:coc_global_extensions = [
+            \ 'coc-json',
+            \ 'coc-tsserver',
+            \ 'coc-html',
+            \ 'coc-css',
+            \ 'coc-yaml',
+            \ 'coc-highlight',
+            \ 'coc-angular',
+            \ 'coc-go',
+            \ 'coc-rls',
+            \ 'coc-pyright',
+            \ ]
+
 call plug#begin('~/.config/nvim/plugged')
 
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-repeat'
-Plug 'tpope/vim-commentary'
 
 Plug 'junegunn/goyo.vim'
 Plug 'junegunn/limelight.vim'
@@ -20,36 +32,39 @@ Plug 'mbbill/undotree'
 Plug 'itchyny/lightline.vim'
 Plug 'morhetz/gruvbox'
 
+Plug 'neoclide/coc.nvim', {'branch': 'release', 'do': { -> coc#util#install() }}
+
 call plug#end()
 
 let g:lightline = {
-      \ 'colorscheme': 'wombat',
-      \ 'active': {
-      \   'right': [['lineinfo'],
-      \              ['colinfo'],
-      \              [ 'fileformat', 'fileencoding', 'filetype']]
-      \ },
-      \ 'component': {
-      \   'colinfo': "%{printf('%03d/%03d', col('.'),  col('$'))}",
-      \   'lineinfo': "%{printf('%04d/%04d', line('.'),  line('$'))}",
-      \ },
-      \ }
+            \ 'colorscheme': 'wombat',
+            \ 'active': {
+            \   'right': [['lineinfo'],
+            \              ['colinfo'],
+            \              [ 'fileformat', 'fileencoding', 'filetype']]
+            \ },
+            \ 'component': {
+            \   'colinfo': "%{printf('%03d/%03d', col('.'),  col('$'))}",
+            \   'lineinfo': "%{printf('%04d/%04d', line('.'),  line('$'))}",
+            \ },
+            \ }
 
 colo gruvbox
 set background=dark
 let g:gruvbox_contrast_dark='soft'
 
 nn <leader>q :UndotreeToggle<cr>
-set completeopt-=preview
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """""""""""""""""""""""""""plugins"""""""""""""""""""""""""""""""""""""
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set rnu
+set nu
 set tabstop=4 softtabstop=0 expandtab shiftwidth=4 smarttab
 set hlsearch
 set incsearch
 set smartcase
+set ignorecase
 
 set autowrite
 set showcmd
@@ -68,7 +83,7 @@ set clipboard=unnamedplus
 set encoding=utf-8
 
 " 90 chars/line
-set colorcolumn=90
+set colorcolumn=80
 
 set listchars=eol:§,extends:»,precedes:«,tab:▶\ ,trail:•,space:∙
 set list
